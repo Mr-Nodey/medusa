@@ -13,7 +13,9 @@ export default function ProductRail({
   region: Region
 }) {
   const { products } = collection
-
+   
+  console.log(collection.handle);
+  
   if (!products) {
     return null
   }
