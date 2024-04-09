@@ -2,8 +2,13 @@ import React from 'react'
 import { productsDetails } from '../context'
 import { FaStar } from "react-icons/fa6";
 import { CiHeart } from "react-icons/ci";
+import { BiPlus } from 'react-icons/bi';
+import Details from './Details';
+import Size from './Size';
+import Shipping from './Shipping';
 
 const ProductsDetails = () => {
+       
     return (
         <main className=' mr-4 space-y-4 pl-4  md:pr-10'>
             {productsDetails.map((item) => (
@@ -49,6 +54,28 @@ const ProductsDetails = () => {
 
                 </div>
             ))}
+
+            <hr />
+
+           {/* Products Detail */}
+             <div className=' px-2'>
+                  <Details/>
+             </div>
+
+             <hr />
+
+             {/* Size and fit  */}
+             <div className=' px-2'>
+                   <Size/>
+             </div>
+
+               <hr />
+             {/* SHIPPING AND RETURN */}
+             <div className=' px-2'>
+                <Shipping/>
+             </div>
+
+
         </main>
     )
 }

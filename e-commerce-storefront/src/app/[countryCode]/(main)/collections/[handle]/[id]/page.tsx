@@ -5,7 +5,7 @@ import Image from 'next/image'
 const SinglePage = () => {
   return (
     <section className='max-w-screen-2xl mx-auto   grid grid-cols-1 md:grid-cols-2'>
-               <div className='relative  flex-1  h-[350px]  md:h-[400px] lg:h-[500px]'>
+               <div className='relative  flex-1 my-8 h-[350px]  md:h-[400px] lg:h-[500px]'>
                        <Image fill src={Image1} alt="" className="object-cover absolute" />
                </div>
 
