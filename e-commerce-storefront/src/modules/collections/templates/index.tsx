@@ -10,6 +10,7 @@ import PaginatedProducts from "@modules/store/templates/paginated-products"
 import { Category, products } from "./Content";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { BiHeart } from "react-icons/bi";
 
 export default function CollectionTemplate({
   sortBy,
@@ -75,11 +76,18 @@ export default function CollectionTemplate({
 
           <div className="flex-1 grid grid-cols-2 lg:grid-cols-3 gap-3 ">
             {products.map((item) => (
-              <div className="relative w-full h-[250px] cursor-pointer sm:h-[250px] md:h-[400px] group" key={item.id}>
+              <div className=" flex flex-col " key={item.id} >
+                   <div className="relative w-full h-[250px] cursor-pointer sm:h-[250px] md:h-[400px] group" >
                 <Image onClick={()=> router.push(`/collections/${collection.handle}/${title}`)} src={item.img} alt="" className="object-cover absolute" fill />
-                <p className="px-4 py-2 backdrop-filter backdrop-blur-sm opacity-0 group-hover:opacity-100 absolute left-0 right-0 bottom-0 w-[150px] h-[50px] text-white flex items-center justify-center">
-                  <span>Quick View</span>
+                <p className="px-4 py-2 backdrop-filter backdrop-blur-sm opacity-0 group-hover:opacity-100 absolute left-0 right-0 bottom-0 md:w-[150px] w-[110px]  h-[20px] md:h-[50px] text-white flex items-center justify-center">
+                  <span className="text-[13px] md:text-[16px]"> Quick View</span>
                 </p>
+              </div>
+                  <div className=" flex mt-2 items-center  justify-between gap-x-2">
+                      <h1 className=" font-medium text-[14px] md:text-[18px]">{item.title2}</h1>
+                       <BiHeart size={24} className=" cursor-pointer"/>
+                  </div>
+                  <p className=" font-medium">${item.price}</p>
               </div>
             ))}
           </div>

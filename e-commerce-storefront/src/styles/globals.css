@@ -110,3 +110,17 @@
     @apply text-[32px] leading-[44px] font-semibold;
   }
 }
+
+
+
+
+  
+.scroll-smooth::-webkit-scrollbar {
+    display: none; /* Hide the vertical scrollbar */
+  }
+
+.scroll-smooth {
+    overflow-y: hidden; /* Hide vertical overflow */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping of child elements */
+  }

@@ -6,7 +6,7 @@ import Image from 'next/image';
 import Image2 from "../../../../../public/image_2.jpg"
 const CustomerReviews = () => {
   return (
-    <div className=' max-w-screen-2xl mx-auto '>
+    <div className=' max-w-screen-2xl mx-auto'>
            <h1 className=' text-[24px] py-4 md:py-6 text-[#424242] font-semibold md:text-[35px]'>You Said It Best</h1>
 
            <div className=' w-full grid grid-cols-1 md:grid-cols-2 shadow-sm bg-green-100  gap-x-4  items-center '>

@@ -9,7 +9,7 @@ const TalkTrash = () => {
         <div className='  bg-slate-100 py-10 my-5'>
             <div className=' max-w-screen-2xl  gap-x-4 justify-center mx-auto flex-row md:flex items-center '>
                 <div className=' flex-1 space-y-3 px-3 md:px-1 lg:px-0 text-[#424242]'>
-                    <h1 className=' font-semibold text-[25px] lg:text-[40px] '>Sustainability = Transparency</h1>
+                    <h1 className=' font-semibold text-[20px] md:text-[25px] lg:text-[40px] '>Sustainability = Transparency</h1>
                     <Link href="/" className=' uppercase  flex items-center gap-x-1'>Learn More <IoIosArrowRoundForward size={24} /></Link>
                     <p className=' md:text-[16px] text-[14px] '>The apparel industry creates a lot of trash—10.5 million tonnes per year, to be exact. We&apos;re helping divert some of it from landfills, while conserving water and important resources, too. By planting trees for every item purchased, we prove to the world that sustainability can and should be as easy as putting on a t-shirt. Here&apos;s a snapshot of the impact you&apos;ve helped create so far this year:</p>
 
@@ -28,8 +28,8 @@ const TalkTrash = () => {
                         </div>
                     </div>
                 </div>
-                <div className=' relative w-full h-[400px] md:h-[500px] px-4  flex-1'>
-                    <Image src={Image3} alt="" fill className=" absolute" />
+                <div className=' relative w-full h-[300px] md:h-[400px]  lg:w-[500px] px-4  flex-1'>
+                    <Image src={Image3} alt="" fill className=" absolute object-cover" />
                 </div>
             </div>
         </div>

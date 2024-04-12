@@ -118,8 +118,6 @@ export const Features = [
     }
 ]
 
-
-
 // Size and fit
 
 export const Fit = [
@@ -145,8 +143,6 @@ export const Fit = [
     }
 ]
 
-
-
 export const shipping = [
     {
         id:1,
@@ -167,5 +163,32 @@ export const shipping = [
         id:4,
         title:"Circularity",
         desc:"This item is eligible for our take back program that repurposes and recycles your old tentree clothing, so that nothing goes to waste."
+    }
+]
+
+
+
+// Comment Sections
+export const Comments = [
+    {
+        id:1,
+        name:"Julie B.",
+        tag:"Good undies",
+        date:"26 March 2024",
+        desc:"I like the fabric and the cut is comfortable. However, the fabric pills too quick. Considering I launder them in a laundry bag and air dry, the fabric should not pill so easily and the band not stretch as quickly. Purchased two more pairs to replace 1 pair that was unraveling at the seams.",
+    },
+    {
+        id:2,
+        name:"Fredella W.",
+        tag:"Best underwear!",
+        date:"26 Jan 2024",
+        desc:"These are my new favourite underwear! I already had the same in pink and decided to get another pair while I was making another order.",
+    },
+    {
+        id:3,
+        name:"Lyndsay B.",
+        tag:"Very comfy",
+        date:"05 February 2024",
+        desc:"Not a ton of stretch but the fabric is very comfortable. Good coverage. I've bought more pairs since trying out the first pair.",
     }
 ]

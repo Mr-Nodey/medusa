@@ -73,7 +73,7 @@ export default async function Home({
   return (
     <>
       <Hero />
-      <MeetTheProducts/>
+      <MeetTheProducts title={"Meet The Products"}/>
       <TalkTrash/>
       <CustomerReviews/>
       <SomeDesigns/>

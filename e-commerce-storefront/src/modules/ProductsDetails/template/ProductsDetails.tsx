@@ -46,7 +46,7 @@ const ProductsDetails = () => {
                     </div>
                     
                     <div className=' flex items-center text-[#eeeee9] gap-x-[2px]'>
-                         <button className='bg-[#516569]  my-2 flex items-center justify-center gap-x-[2px] w-full h-12'>Add to Bag - $338</button>
+                         <button className='bg-[#516569]  my-4 flex items-center justify-center gap-x-[2px] w-full h-12'>Add to Bag - $338</button>
                          <span className='bg-[#516569] h-12  flex items-center justify-center px-2 cursor-pointer'><CiHeart  size={28} /></span>
                     </div>
                     <h2 className=' text-[24px] md:text-[30px] font-semibold text-[#424242] my-2'>{item.title2}</h2>
