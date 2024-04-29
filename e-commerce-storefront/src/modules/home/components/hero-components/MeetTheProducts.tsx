@@ -37,7 +37,7 @@ const MeetTheProducts = ({title}:{title:string}) => {
 
                <div ref={scrollRef} className=' flex flex-row scroll-smooth  overflow-y-auto gap-x-4'>
                     {products.map((item)=> (
-                         <div key={item.id} className='' >
+                         <div key={item.id} className=' cursor-pointer' >
                                     <div className='m-2 relative w-72 h-[200px]  md:h-[300px] shadow-md shadow-black  md:w-[300px] lg:w-[400px] lg:h-[400px]'>
                                         <Image src={item.img} fill alt="" className=' absolute object-cover'/>
                                     </div>
